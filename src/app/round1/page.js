@@ -107,6 +107,8 @@ const r1 = () => {
       /* router.push('/login') */
     }
     let isTrueQ1 = false;
+
+  
   return (
     <div className="bg-[#010c34] min-h-[100vh]">
       <div className='w-screen overflow-auto max-h-[20%]'>
@@ -119,37 +121,19 @@ const r1 = () => {
             <div className='max-h-[90%] m-2'>
             <div className="bg-opacity-10 bg-gradient-to-b from-[#4d4f4f6a] from-10% via-[#42434462] via-30% to-[#41414100] to-100% ... text-white max-h-[100%] max-w-[100%] overflow-y-auto grid grid-rows-auto gap-0 z-0 m-2">
             <ul className={"md:flex-auto px-4 z-0 py-3"}>
-                <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center  `}>
-
+            <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
                     <p className="text-white text-xl font-bold">Question 1</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
-                        onClick={() => addData('r1q1')}>
-                          submit
-                        </button>
-                    </div>
-
-                </li>
-                <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
-                <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
-                    </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
-                        <span className='mb-4'>Textbox content for Question 1</span>
-                        <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
-                            placeholder="Enter your answer here..."
-                            onChange={(e) => setans((e).target.value)}
-                        ></input>
-                        <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -157,16 +141,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 2</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -174,16 +159,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 3</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -191,16 +177,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 4</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -208,16 +195,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 5</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -225,16 +213,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 6</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -242,16 +231,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 7</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -259,16 +249,17 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 8</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
@@ -276,21 +267,41 @@ const r1 = () => {
                 </li>
                 <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
                 <div className="mb-2">
-                    <p className="text-white text-xl font-bold">Question 1</p>
+                    <p className="text-white text-xl font-bold">Question 9</p>
                     </div>
-                    <div className="bg-01071D p-3 rounded-md text-left">
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
                         <span className='mb-4'>Textbox content for Question 1</span>
                         <input
-                            className="w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72"
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
                             placeholder="Enter your answer here..."
                             onChange={(e) => setans((e).target.value)}
                         ></input>
                         <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q1')}>
                           submit
                         </button>
                     </div>
                 </li>
+                <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
+                <div className="mb-2">
+                    <p className="text-white text-xl font-bold">Question 10</p>
+                    </div>
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
+                        <span className='mb-4'>Textbox content for Question 1</span>
+                        <input
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
+                            placeholder="Enter your answer here..."
+                            onChange={(e) => setans((e).target.value)}
+                        ></input>
+                        <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        onClick={() => addData('r1q1')}>
+                          submit
+                        </button>
+                    </div>
+                </li>
+                
             </ul>
 
         </div>
