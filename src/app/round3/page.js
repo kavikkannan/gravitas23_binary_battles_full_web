@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../Components/Sidebar'
-import QuestionWheel from '../Components/QuestionWheel'
+import QuestionWheel from '../Components/QuestionWheel1'
 const r3 = () => {
   return (
     <div className="bg-[#010c34] min-h-[100vh]">

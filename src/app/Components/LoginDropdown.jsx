@@ -1,16 +1,45 @@
 // components/LoginDropdown.js
-import { useState } from 'react';
+import Head from 'next/head';
+import { useState,useEffect } from 'react';
+import {
+    getAuth,
+    signInWithEmailAndPassword
+} from 'firebase/auth'
+/* import { useRouter } from 'next/router'; */
+import { app } from '../config/firebaseConfig';
+export default function Register() {
+    const auth = getAuth(app);
+    const user = auth.currentUser;
+    /* let router = useRouter() */
+    const [isOpen, setIsOpen] = useState(false);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    
+    useEffect(() => {
+        let token1 = sessionStorage.getItem('Token1')
 
-const LoginDropdown = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+        if(token1){
+            /* router.push('round1') */
+        }
+    }, [])
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-
   const handleLogin = () => {
+    signInWithEmailAndPassword(auth, username, password)
+        .then((response) => {
+            console.log(response.user)
+            sessionStorage.setItem('Token1', response.user.accessToken);
+            sessionStorage.setItem('user.email', user.email);
+            sessionStorage.setItem('user.uid', user.uid);
+           /*  router.push('/round1') */
+            console.log("hiiii")
+        })
+        .catch((err) => {
+            alert('Cannot Log in')
+            console.error(err);
+        })
     // Implement your login logic using Firebase or your preferred authentication method
     // For this example, we'll just log the username and password to the console
     console.log('Username:', username);
@@ -75,4 +104,3 @@ const LoginDropdown = () => {
   );
 };
 
-export default LoginDropdown;
